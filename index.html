@@ -14,10 +14,10 @@
     
     <header class="head"> <!--add id-->
         <div class="logoarea" id="tophead"><img src="images/drnut_logo.svg" alt="Dr. Nut Logo" class="logo"></div>
-        <h2 class="hidden">Homepage</h2>
 
         <!-- Mobile Menu -->
        <div class="mobile">
+        <h3 class="hidden">Mobile Main Navigation</h3>
         <input type="checkbox" id="overlay-input">
         <label for="overlay-input" id="overlay-button"><span></span></label>
         <div id="overlay">
@@ -35,7 +35,7 @@
 
         <nav class="nav full two-items" aria-label="Main Navigation">
             <div>
-                <h3 class="hidden">Main Navigation</h3>
+                <h3 class="hidden">Desktop Main Navigation</h3>
                 <ul>
                     <li><a class="selected" href="index.html">HOME</a></li>
                     <li><a href="#about">ABOUT</a></li> 
@@ -88,30 +88,34 @@
     </header>
 
     <main class="main" id="content">
+
         <section class="full" id="imageContainer">
+            <h2 class="hidden">Top Banners Showcase</h2>
+            
             <div id="teamImages" style="right: 0"> <!-- add in all of the images to make a scrolling "banner" -->
-                <img src="images/banner01.jpg"/>
-                <img src="images/banner02.jpg"/>
-                <img src="images/banner03.jpg"/>
+                
+                <img src="images/banner01.jpg" alt="Top Banner1">
+                <img src="images/banner02.jpg" alt="Top Banner2">
+                <img src="images/banner03.jpg" alt="Top Banner3">
             </div>
         </section>
 
         <section media="(min-width:699px)" id="mo_imageContainer" class="mobile">
-            <h2 class="hidden">Mobile Top Banners</h2>
+            <h3 class="hidden">Mobile Top Banners</h3>
             <div id="mo_teamImages" style="right: 0"> <!-- add in all of the images to make a scrolling "banner" -->
-                <img src="images/mobile/mobile-banner01.jpg"/>
-                <img src="images/mobile/mobile-banner02.jpg"/>
-                <img src="images/mobile/mobile-banner03.jpg"/>
+                <img src="images/mobile/mobile-banner01.jpg" alt="Top Banner1">
+                <img src="images/mobile/mobile-banner02.jpg" alt="Top Banner2">
+                <img src="images/mobile/mobile-banner03.jpg" alt="Top Banner3">
             </div>
         </section>
     
-        <nav id="bottomNav" class="mo_bannerbtn">
+        <div id="bottomNav" class="mo_bannerbtn">
             <ul id="navList">
                 <li><div class="teamContainer banner01" data-offset="0"></div></li>
                 <li><div class="teamContainer banner02" data-offset="1"></div></li>
                 <li><div class="teamContainer banner03" data-offset="2"></div></li>
             </ul>
-        </nav>
+        </div>
 
         <section id="about">
             <h2 class="hidden">About Dr. Nut</h2>
