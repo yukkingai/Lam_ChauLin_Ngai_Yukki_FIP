@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+    <title>Dr. Nut - Products</title>
+</head>
+<body class="site">
+    <h1 class="hidden">Dr. Nut Products</h1>
+    <a class="hidden" href="#content">Skip to content</a>
+    
+    <header class="head">
+        <div class="logoarea" id="tophead"><img src="images/drnut_logo.svg" alt="Dr. Nut Logo" class="logo"></div>
+        
+        <!-- Mobile Menu -->
+       <div class="mobile">
+        <input type="checkbox" id="overlay-input">
+        <label for="overlay-input" id="overlay-button"><span></span></label>
+        <div id="overlay">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                    <li><a href="index.html">ABOUT</a></li> 
+                    <li><a href="index.html">HISTROY</a></li> 
+                    <li><a class="selected" href="products.html">PRODUCTS</a></li> 
+                    <li><a href="index.html">CONTACT</a></li> 
+                    <li><a href="blog.html">BLOG</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- Mobile Menu End -->
+        
+        <nav class="nav full two-items" aria-label="Main Navigation">
+            <div>
+                <h3 class="hidden">Main Navigation</h3>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="index.html">ABOUT</a></li> 
+                    <li><a href="index.html">HISTROY</a></li> 
+                    <li><a class="selected" href="products.html">PRODUCTS</a></li> 
+                    <li><a href="index.html">CONTACT</a></li> 
+                    <li><a href="blog.html">BLOG</a></li>
+                </ul>
+                
+            </div>
+
+            <div>
+                <h3 class="hidden">Social Media</h3>
+                <ul id="iconNav">
+                    <li id="fb">
+                       <a href="http://www.facebook.com">
+                           <svg id="o_fb" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+                               <g id="o_fb-2" data-name="o_fb">
+                                 <path id="orange" d="M48,24c0,13.3-10.7,24-24,24S0,37.3,0,24,10.7,0,24,0s24,10.7,24,24Z" style="fill: #f69220;"/>
+                                 <path id="white" d="M20,39h6v-15h4.5l.5-6h-4.8v-2.4c0-1.2,.8-1.4,1.3-1.4h3.4v-5.2h-4.6c-5.1,0-6.3,3.8-6.3,6.3v2.7h-3v6h3v15Z" style="fill: #fff6dd;"/>
+                               </g>
+                             </svg>
+
+                       </a>
+                   </li>
+
+                   <li id="ig">
+                       <a href="http://www.Instagram.com">
+                           <svg id="o_ig" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+                               <g id="o_ig-2">
+                                 <path id="orange2" d="M48,24c0,13.3-10.7,24-24,24S0,37.3,0,24,10.7,0,24,0s24,10.7,24,24Z" style="fill: #f69220;"/>
+                                 <path id="white2" d="M33.2,9H14.8c-3.2,0-5.8,2.6-5.8,5.8v18.4c0,3.2,2.6,5.8,5.8,5.8h18.4c3.2,0,5.8-2.6,5.8-5.8V14.8c0-3.2-2.6-5.8-5.8-5.8Zm1.7,3.5h.7v5.1h-5.1v-5.1h4.4Zm-15.2,8.4c1-1.3,2.5-2.2,4.3-2.2s3.3,.9,4.3,2.2c.6,.9,1,1.9,1,3.1,0,2.9-2.4,5.3-5.3,5.3s-5.3-2.4-5.3-5.3c0-1.1,.4-2.2,1-3.1Zm16.4,12.3c0,1.6-1.3,2.9-2.9,2.9H14.8c-1.6,0-2.9-1.3-2.9-2.9v-12.3h4.5c-.4,1-.6,2-.6,3.1,0,4.5,3.7,8.2,8.2,8.2s8.2-3.7,8.2-8.2c0-1.1-.2-2.1-.6-3.1h4.5v12.3Z" style="fill: #fff6dd;"/>
+                               </g>
+                             </svg>
+                       </a>
+                   </li>
+
+                   <li id="youtude">
+                       <a href="http://www.youtube.com">
+                           <svg id="o_yb" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+                               <g id="o_yb-2">
+                                 <path id="orange3" d="M48,24c0,13.3-10.7,24-24,24S0,37.3,0,24,10.7,0,24,0s24,10.7,24,24Z" style="fill: #f69220;"/>
+                                 <path id="white3" d="M38.7,17.7s-.3-2.2-1.2-3.1c-1.1-1.2-2.4-1.3-3-1.3-4.2-.3-10.5-.3-10.5-.3h0s-6.3,0-10.5,.3c-.6,.1-1.9,.1-3,1.3-.9,.9-1.2,3.1-1.2,3.1,0,0-.3,2.6-.3,5.1v2.4c0,2.5,.3,5.1,.3,5.1,0,0,.3,2.2,1.2,3.1,1.1,1.2,2.6,1.2,3.3,1.3,2.4,.2,10.2,.3,10.2,.3,0,0,6.3,0,10.5-.3,.6-.1,1.9-.1,3-1.3,.9-.9,1.2-3.1,1.2-3.1,0,0,.3-2.5,.3-5.1v-2.4c0-2.5-.3-5.1-.3-5.1Zm-17.8,10.4v-8.8l8.1,4.4-8.1,4.4Z" style="fill: #fff6dd;"/>
+                               </g>
+                             </svg>
+                       </a>
+                   </li>
+               </ul>
+
+            </div>
+        </nav>
+    </header>
+
+    <main class="main" id="content">
+        
+            <div class="one-item">
+                <h2 class="hidden">Top Image</h2>
+                <div class="topimage full">
+                    <img src="images/product_banner.jpg" alt="Product Page Banner">
+                    
+                </div>
+                <div class="mo_aboutimage mobile custom-override"><img src="images/mobile/product-banner.jpg" alt="About banner mobile"></div>
+            </div>
+
+        
+
+        <section class="one-item">
+            <h2 class="hidden">Products Introduction</h2>
+
+            <div class="product-show-info full">
+                <h3 class="hidden">Products Info</h3>
+
+            <div class="product-image"><img src="images/product-info.png" alt="Product Page Info">
+
+                    <div class="product-btn1" data-offset="0"><img src="images/product-button.svg"></div>
+                    <div class="product-btn2" data-offset="1"><img src="images/product-button.svg"></div>
+                    <div class="product-btn3" data-offset="2"><img src="images/product-button.svg"></div>
+            </div>
+
+            <section class="lightbox1 lightbox">
+                <a href="#" class="close1 hidden">X</a>
+                <div class="info product-box1 hidden"></div>
+            </section>
+
+            <section class="lightbox2 lightbox">
+                <a href="#" class="close2 hidden">X</a>
+                <div class="info product-box2 hidden"></div>
+            </section>
+
+            <section class="lightbox3 lightbox">
+                <a href="#" class="close3 hidden">X</a>
+                <div class="info product-box3 hidden"></div>
+            </section>
+
+            </div> 
+        </section>
+
+            <!------- Mobile Product page------>
+        <section class="one-item">
+            <h2 class="hidden">Products Info</h2>
+
+            <div id="mo_pro_set" class="product-show-info mobile">
+
+                <div class="mo_product-image" id="lemon_img"><img src="images/mobile/mobile-product2.png" alt="Product Page Info">
+                </div>
+
+                <div class="mo_product">
+                <p><span class="pdt_title">Dr. Nut LEMON</span><br>
+                      <br>
+                      <span class="sm_title">Brewed</span> <br>
+                      In the United States <br>
+                      <br>
+                      <span class="sm_title">Ingredients</span> <br>
+                      Almond, Lemon, Sugar, Barleycorn, yeast, and water<br>
+                      <br>
+                      <span class="sm_title">Volume</span><br>
+                      355ml
+                    </p>                   
+                </div>
+            
+                <div class="mo_product-image" id="original_img"><img src="images/mobile/mobile-product1.png" alt="Product Page Info">
+                </div>
+                <div class="mo_product">
+                    <p class="ori"><span class="pdt_title">Dr. Nut ORIGINAL</span><br>
+                      <br>
+                      <span class="sm_title">Brewed</span> <br>
+                      In the United States <br>
+                      <br>
+                      <span class="sm_title">Ingredients</span> <br>
+                      Almond, Sugar, Barleycorn, yeast, and water<br>
+                      <br>
+                      <span class="sm_title">Volume</span><br>
+                      355ml
+                    </p> 
+                </div>
+            
+                <div class="mo_product-image" id="stw_img"><img src="images/mobile/mobile-product3.png" alt="Product Page Info">
+                </div>
+                <div class="mo_product stw">
+                    <p><span class="pdt_title">Dr. Nut STRAWBERRY</span><br>
+                      <br>
+                      <span class="sm_title">Brewed</span> <br>
+                      In the United States <br>
+                      <br>
+                      <span class="sm_title">Ingredients</span> <br>
+                      Almond, Strawberry, Sugar, Barleycorn, yeast, and water<br>
+                      <br>
+                      <span class="sm_title">Volume</span><br>
+                      355ml
+                    </p> 
+                </div>
+                
+            </div>
+        </section>
+    </main>
+
+    
+    <footer class="foot full two-items">
+        <h2 class="hidden">Site Footer</h2>
+        <div class="contact-form">
+
+            <h3 class="hidden">Contact form</h3>
+        
+            <form id="contactForm" action="form.php" method="post">
+                <label for="name">NAME: <span class="required">*</span></label>
+                <input type="text" required id="name" name="fullName" size="30" placeholder="Enter Your Name">
+
+                <label for="email">EMAIL: <span class="required">*</span></label>
+                <input type="email" required id="email" size="30" placeholder="Enter Your Email">
+
+                <label for="phone">TEL: <span class="required"></span></label>
+                <input type="tel" required id="phone" size="30" placeholder="Enter Your Phone Number">
+
+                <label for="comments">MESSAGES:</label>
+                <textarea name="comments" id="comments" required cols="50" rows="8"></textarea>
+
+                <input id="submit" type="submit" value="SUBMIT">
+            </form>
+        </div>
+
+            <div class="footer-logo-soical">
+                <h3 class="hidden">Dr. Nut Contact Details</h3>
+
+                <div>
+                <img class ="logo" src="images/drnut_logo_offwhite.svg" alt="Dr. Nut Footer Logo"> <br>
+                <p>If you have any questions, <br>
+                    please feel free to contact us, <br>
+                    and you are also welcome to give us your opinion.</p><br><br><br><br>
+                <p>E-MAIL: hello@drnut.ca <br>
+                    228 125 2556</p><br>
+                <p>DR. NUT<br>
+                    620a Richmond St,<br>
+                    Toronto, ON, Canada<br>
+                    N6A 5J9
+                </p>
+                </div>
+                
+                <div>
+                    <h3 class="hidden">Social Media</h3>
+                    <ul id="iconNav2">
+                        <li id="fb2">
+                           <a href="http://www.facebook.com">
+                               <svg id="b_fb_icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+                                   <g id="b_fb">
+                                     <path id="white_b1" d="M48,24c0,13.3-10.7,24-24,24S0,37.3,0,24,10.7,0,24,0s24,10.7,24,24Z" style="fill: #fff6dd;"/>
+                                     <path id="brown_b1" d="M20,39h6v-15h4.5l.5-6h-4.8v-2.4c0-1.2,.8-1.4,1.3-1.4h3.4v-5.2h-4.6c-5.1,0-6.3,3.8-6.3,6.3v2.7h-3v6h3v15Z" style="fill: #75451c;"/>
+                                   </g>
+                                 </svg>
+
+                           </a>
+                       </li>
+
+                       <li id="ig2">
+                           <a href="http://www.Instagram.com">
+                               <svg id="b_ig_icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+                                   <g id="ig_b">
+                                     <path id="white_b2" d="M48,24c0,13.3-10.7,24-24,24S0,37.3,0,24,10.7,0,24,0s24,10.7,24,24Z" style="fill: #fff6dd;"/>
+                                     <path id="brown_b2" d="M33.2,9H14.8c-3.2,0-5.8,2.6-5.8,5.8v18.4c0,3.2,2.6,5.8,5.8,5.8h18.4c3.2,0,5.8-2.6,5.8-5.8V14.8c0-3.2-2.6-5.8-5.8-5.8Zm1.7,3.5h.7v5.1h-5.1v-5.1h4.4Zm-15.2,8.4c1-1.3,2.5-2.2,4.3-2.2s3.3,.9,4.3,2.2c.6,.9,1,1.9,1,3.1,0,2.9-2.4,5.3-5.3,5.3s-5.3-2.4-5.3-5.3c0-1.1,.4-2.2,1-3.1Zm16.4,12.3c0,1.6-1.3,2.9-2.9,2.9H14.8c-1.6,0-2.9-1.3-2.9-2.9v-12.3h4.5c-.4,1-.6,2-.6,3.1,0,4.5,3.7,8.2,8.2,8.2s8.2-3.7,8.2-8.2c0-1.1-.2-2.1-.6-3.1h4.5v12.3Z" style="fill: #75451c;"/>
+                                   </g>
+                                 </svg>
+                           </a>
+                       </li>
+
+                       <li id="youtude2">
+                           <a href="http://www.youtube.com">
+                               <svg id="b_yb_icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+                                   <g id="b_yb">
+                                     <path id="white_b3" d="M48,24c0,13.3-10.7,24-24,24S0,37.3,0,24,10.7,0,24,0s24,10.7,24,24Z" style="fill: #fff6dd;"/>
+                                     <path id="brown_b3" d="M38.7,17.7s-.3-2.2-1.2-3.1c-1.1-1.2-2.4-1.3-3-1.3-4.2-.3-10.5-.3-10.5-.3h0s-6.3,0-10.5,.3c-.6,.1-1.9,.1-3,1.3-.9,.9-1.2,3.1-1.2,3.1,0,0-.3,2.6-.3,5.1v2.4c0,2.5,.3,5.1,.3,5.1,0,0,.3,2.2,1.2,3.1,1.1,1.2,2.6,1.2,3.3,1.3,2.4,.2,10.2,.3,10.2,.3,0,0,6.3,0,10.5-.3,.6-.1,1.9-.1,3-1.3,.9-.9,1.2-3.1,1.2-3.1,0,0,.3-2.5,.3-5.1v-2.4c0-2.5-.3-5.1-.3-5.1Zm-17.8,10.4v-8.8l8.1,4.4s-8.1,4.4-8.1,4.4Z" style="fill: #75451c;"/>
+                                   </g>
+                                 </svg>
+
+                                   
+                           </a>
+                       </li>
+                   </ul>
+                </div>
+
+                <div class="top">
+                    <a href="#tophead"><svg version="1.1" id="top_icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    viewBox="0 0 70 70" style="enable-background:new 0 0 70 70;" xml:space="preserve">
+                    <style type="text/css">
+                        .st0{fill:#FDF6DF;}
+                        .st1{fill:#75441B;}
+                    </style>
+                    <circle id="ball" class="st0" cx="35" cy="35" r="35"/>
+                    <path id="arrow" class="st1" d="M20.7,45.5H11l24-27l24,27h-9.7L35,29.4L20.7,45.5z"/>
+                    </svg></a>
+                </div>
+            </div>
+        
+</footer>
+
+<!---------------------- mobile ------------------->
+<footer class="foot one-item mobile">
+    <h2 class="hidden">Site Footer</h2>
+    <div class="contact-form">
+
+        <h3 class="hidden">Contact form</h3>
+    
+        <form id="contactForm" action="form.php" method="post">
+            <label for="name">NAME: <span class="required">*</span></label>
+            <input type="text" required id="name" name="fullName" size="30" placeholder="Enter Your Name">
+
+            <label for="email">EMAIL: <span class="required">*</span></label>
+            <input type="email" required id="email" size="30" placeholder="Enter Your Email">
+
+            <label for="phone">TEL: <span class="required"></span></label>
+            <input type="tel" required id="phone" size="30" placeholder="Enter Your Phone Number">
+
+            <label for="comments">MESSAGES:</label>
+            <textarea name="comments" id="comments" required cols="50" rows="8"></textarea>
+
+            <input id="submit" type="submit" value="SUBMIT">
+        </form>
+    </div>
+
+        <div class="footer-logo-soical">
+            <h3 class="hidden">Dr. Nut Contact Details</h3>
+
+            <div>
+            <img class ="logo" src="images/drnut_logo_offwhite.svg" alt="Dr. Nut Footer Logo"> <br>
+            <p>If you have any questions, <br>
+                please feel free to contact us, <br>
+                and you are also welcome to give us your opinion.</p><br><br><br><br>
+            <p>E-MAIL: hello@drnut.ca <br>
+                228 125 2556</p><br>
+            <p>DR. NUT<br>
+                620a Richmond St,<br>
+                Toronto, ON, Canada<br>
+                N6A 5J9
+            </p>
+            </div>
+            
+            <div>
+                <h3 class="hidden">Social Media</h3>
+                <ul id="iconNav2">
+                    <li id="fb2">
+                       <a href="http://www.facebook.com">
+                           <svg id="b_fb_icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+                               <g id="b_fb">
+                                 <path id="white_b1" d="M48,24c0,13.3-10.7,24-24,24S0,37.3,0,24,10.7,0,24,0s24,10.7,24,24Z" style="fill: #fff6dd;"/>
+                                 <path id="brown_b1" d="M20,39h6v-15h4.5l.5-6h-4.8v-2.4c0-1.2,.8-1.4,1.3-1.4h3.4v-5.2h-4.6c-5.1,0-6.3,3.8-6.3,6.3v2.7h-3v6h3v15Z" style="fill: #75451c;"/>
+                               </g>
+                             </svg>
+
+                       </a>
+                   </li>
+
+                   <li id="ig2">
+                       <a href="http://www.Instagram.com">
+                           <svg id="b_ig_icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+                               <g id="ig_b">
+                                 <path id="white_b2" d="M48,24c0,13.3-10.7,24-24,24S0,37.3,0,24,10.7,0,24,0s24,10.7,24,24Z" style="fill: #fff6dd;"/>
+                                 <path id="brown_b2" d="M33.2,9H14.8c-3.2,0-5.8,2.6-5.8,5.8v18.4c0,3.2,2.6,5.8,5.8,5.8h18.4c3.2,0,5.8-2.6,5.8-5.8V14.8c0-3.2-2.6-5.8-5.8-5.8Zm1.7,3.5h.7v5.1h-5.1v-5.1h4.4Zm-15.2,8.4c1-1.3,2.5-2.2,4.3-2.2s3.3,.9,4.3,2.2c.6,.9,1,1.9,1,3.1,0,2.9-2.4,5.3-5.3,5.3s-5.3-2.4-5.3-5.3c0-1.1,.4-2.2,1-3.1Zm16.4,12.3c0,1.6-1.3,2.9-2.9,2.9H14.8c-1.6,0-2.9-1.3-2.9-2.9v-12.3h4.5c-.4,1-.6,2-.6,3.1,0,4.5,3.7,8.2,8.2,8.2s8.2-3.7,8.2-8.2c0-1.1-.2-2.1-.6-3.1h4.5v12.3Z" style="fill: #75451c;"/>
+                               </g>
+                             </svg>
+                       </a>
+                   </li>
+
+                   <li id="youtude2">
+                       <a href="http://www.youtube.com">
+                           <svg id="b_yb_icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+                               <g id="b_yb">
+                                 <path id="white_b3" d="M48,24c0,13.3-10.7,24-24,24S0,37.3,0,24,10.7,0,24,0s24,10.7,24,24Z" style="fill: #fff6dd;"/>
+                                 <path id="brown_b3" d="M38.7,17.7s-.3-2.2-1.2-3.1c-1.1-1.2-2.4-1.3-3-1.3-4.2-.3-10.5-.3-10.5-.3h0s-6.3,0-10.5,.3c-.6,.1-1.9,.1-3,1.3-.9,.9-1.2,3.1-1.2,3.1,0,0-.3,2.6-.3,5.1v2.4c0,2.5,.3,5.1,.3,5.1,0,0,.3,2.2,1.2,3.1,1.1,1.2,2.6,1.2,3.3,1.3,2.4,.2,10.2,.3,10.2,.3,0,0,6.3,0,10.5-.3,.6-.1,1.9-.1,3-1.3,.9-.9,1.2-3.1,1.2-3.1,0,0,.3-2.5,.3-5.1v-2.4c0-2.5-.3-5.1-.3-5.1Zm-17.8,10.4v-8.8l8.1,4.4s-8.1,4.4-8.1,4.4Z" style="fill: #75451c;"/>
+                               </g>
+                             </svg>
+
+                               
+                       </a>
+                   </li>
+               </ul>
+            </div>
+
+            <div class="top">
+                <a href="#tophead"><svg version="1.1" id="top_icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                viewBox="0 0 70 70" style="enable-background:new 0 0 70 70;" xml:space="preserve">
+                <style type="text/css">
+                    .st0{fill:#FDF6DF;}
+                    .st1{fill:#75441B;}
+                </style>
+                <circle id="ball" class="st0" cx="35" cy="35" r="35"/>
+                <path id="arrow" class="st1" d="M20.7,45.5H11l24-27l24,27h-9.7L35,29.4L20.7,45.5z"/>
+                </svg>
+                </a>
+            </div>
+        </div>
+    
+</footer>
+<!---------------------- end mobile ------------------->
+
+<script src="js/main.js"></script>
+</body>
+</html>
